@@ -1,0 +1,27 @@
+.headercontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.parentcontainer,
+.child {
+  gap: 0.6rem;
+}
+
+.parent {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .headercontainer {
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .parentcontainer,
+  .child {
+    margin-right: auto;
+    gap: 2.2rem;
+  }
+}

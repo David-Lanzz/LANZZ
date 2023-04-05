@@ -1,0 +1,24 @@
+.booksStorage {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+  border: #d3d3d3 1px solid;
+  padding: 1rem 3%;
+  min-height: 10rem;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .booksStorage {
+    grid-template-columns: 5fr 2fr 1fr 1fr;
+    text-align: start;
+  }
+}
